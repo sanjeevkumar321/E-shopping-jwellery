@@ -1,0 +1,86 @@
+/*-------------------*/
+
+.image-over-textbox{
+    position: absolute;
+    top: 20%;
+    right: 16%;
+    width: 42%;
+        background-color: #ffffff;
+    padding: 2rem;
+
+     font-size: 20px !important;
+}
+.image-over-text-right{
+    position: absolute;
+  top: 20%;
+  right: 36px;
+  width: 32%;
+   font-size: 20px !important;
+}
+.image-over-text-left{
+    position: absolute;
+  top: 20%;
+  left: 36px;
+  width: 32%;
+   font-size: 20px !important;
+}
+
+
+@media only screen and (max-width: 900px) {
+   /* p{
+         font-size: 15px;
+    }*/
+.image-over-textbox{
+    position: relative;
+    background-color: #ffffff;
+    top: 5px;
+    width: 100%;
+    /*font-size: 18px;*/
+    right: 0px;
+}
+
+/*.image-over-textbox h1{*/
+/*  font-size: 16px;*/
+/*  }*/
+.image-over-text-right{
+    position: relative;
+    background-color: #ffffff;
+    top: 10px;
+    width: 90%;
+    /* font-size: 18px; */
+    right: 0px;
+    margin: auto;
+}
+
+.image-over-text-left{
+   position: relative;
+    width: 80%;
+    /*font-size: 10px;*/
+    background-color: #ffffff;
+   /* margin-left: 6%;*/
+    top: 60%;
+}
+.text-light{
+  color: black !important;
+}
+}
+
+
+
+.field_error{color:red;}
+.accordion .accordion__hide {
+    background: #f4f4f4;
+    height: 65px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: "Poppins";
+    cursor: pointer;
+}
