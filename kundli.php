@@ -18,7 +18,7 @@ if(!isset($_SESSION['USER_LOGIN'])){
 			<form class="" action="payment.php" method="get" style="margin: 100px;">
 	         <div class="row">
 		 	 <div class="form-group">
-
+<input type="text" name="aid" value="<?php echo $_GET['aid'] ?>" hidden>
 		 	 <div class="col-md-6">
 		    <label for="name">Name:</label>
 		    <input type="text" class="form-control" name="name">
