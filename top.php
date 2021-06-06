@@ -41,6 +41,17 @@ if($mypage=='product.php'){
 	$meta_title='Contact Us';
 }
 
+if(isset($_POST['send_custom_wp']) && $_POST['cname']!="" && $_POST['cweight']!=""&& $_POST['cprice']!=""  )
+{
+    // print_r($_POST);
+    $product=get_safe_value($con,$_POST['cname']);
+    $weight=get_safe_value($con,$_POST['cweight']);
+    $price=get_safe_value($con,$_POST['cprice']);
+$link='https://api.whatsapp.com/send?text=Product Name- '.$product.' , Weight - '.$weight.' ,Price -'.$price.' &phone='.WHATAPP_NUMBER.' ';
+         echo $link;
+    header('Location: '.$link.'');
+}
+
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -74,6 +85,21 @@ if($mypage=='product.php'){
 		top: -4px;
 		width: 17px;
 	}
+
+    .btn-them{
+        background: #c29958 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 200;
+    height: 45px;
+    line-height: 40px;
+    padding: 0 35px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+    }
+    
 	</style>
 </head>
 <body>
@@ -159,8 +185,8 @@ if($mypage=='product.php'){
 										<?php
 										if(isset($_SESSION['USER_ID'])){
 										?>
-										<a href="wishlist.php"><i class="icon-heart icons"></i></a>
-                                        <a href="wishlist.php"><span class="htc__wishlist"><?php echo $wishlist_count?></span></a>
+										<!-- <a href="wishlist.php"><i class="icon-heart icons"></i></a> -->
+                                        <!-- <a href="wishlist.php"><span class="htc__wishlist"><?php echo $wishlist_count?></span></a> -->
 										<?php } ?>
                                         <a href="cart.php"><i class="icon-handbag icons"></i></a>
                                         <a href="cart.php"><span class="htc__qua"><?php echo $totalProduct?></span></a>

@@ -75,8 +75,19 @@ if($cat_id>0){
             </div>
         </div>
         <!-- End Bradcaump area -->
+<div class="ptb--40">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="bradcaump__inner">
+                               <p class="ptb--10">Now a days anybody can wear and get the benefits of the gemstones recommended by astrologer. According to experience only natural gemstone can give the benifit s and according to vedic astrology our 9 planet's represent the 9 social gemstones. 1.Ruby- chuni - color red. 2.pearl- moti- moon. Pearl is a wide shining gemstone in several varieties of shellfish.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <!-- Start Product Grid -->
-        <section class="htc__product__grid bg__white ptb--100">
+        <section class="htc__product__grid bg__white ptb--10">
             <div class="container">
                 <div class="row">
 					<?php if(count($get_product)>0){?>
@@ -111,7 +122,7 @@ if($cat_id>0){
 												</div>
 												<div class="fr__hover__info">
 													<ul class="product__action">
-														<li><a href="javascript:void(0)" onclick="wishlist_manage('<?php echo $list['id']?>','add')"><i class="icon-heart icons"></i></a></li>
+														<!-- <li><a href="javascript:void(0)" onclick="wishlist_manage('<?php echo $list['id']?>','add')"><i class="icon-heart icons"></i></a></li> -->
 														<li><a href="javascript:void(0)" onclick="manage_cart('<?php echo $list['id']?>','add')"><i class="icon-handbag icons"></i></a></li>
 													</ul>
 												</div>

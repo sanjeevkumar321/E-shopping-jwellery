@@ -21,7 +21,7 @@
                     </div>
                     <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
                         <div class="slide__thumb">
-                            <img src="images/slider/fornt-img/1.png" alt="slider images">
+                            <img src="images/slider/fornt-img/1.jpg" alt="slider images">
                         </div>
                     </div>
                 </div>
@@ -84,9 +84,11 @@
                             </div>
                             <div class="fr__hover__info">
                                 <ul class="product__action">
-                                    <li><a href="javascript:void(0)" onclick="wishlist_manage('<?php echo $list['id'] ?>','add')"><i class="icon-heart icons"></i></a></li>
-                                    <li><a href="javascript:void(0)" onclick="manage_cart('<?php echo $list['id'] ?>','add')"><i class="icon-handbag icons"></i></a></li>
-                                    <li><a href="https://api.whatsapp.com/send?text=Hi%20,I%20Need%20Service&phone=+91855445454545"><i class="icon-phone icons"></i></a></li>
+                                    <li>
+                                                    <a class="wp" href="https://api.whatsapp.com/send?text=<?php echo SITE_PATH."/product.php?id=".$list['id']?>
+                                                    %0a for inquery&phone=+918794302321">
+                                                        <img src="images/icons/whatsappcol.png">
+                                                    </a></li>
                                 </ul>
                             </div>
                             <div class="fr__product__inner">
@@ -137,8 +139,11 @@
                             </div>
                             <div class="fr__hover__info">
                                 <ul class="product__action">
-                                    <li><a href="javascript:void(0)" onclick="wishlist_manage('<?php echo $list['id'] ?>','add')"><i class="icon-heart icons"></i></a></li>
-                                    <li><a href="javascript:void(0)" onclick="manage_cart('<?php echo $list['id'] ?>','add')"><i class="icon-handbag icons"></i></a></li>
+                                   <li>
+                                                    <a class="wp" href="https://api.whatsapp.com/send?text=<?php echo SITE_PATH."/product.php?id=".$list['id']?>
+                                                    %0a for inquery&phone=+918794302321">
+                                                        <img src="images/icons/whatsappcol.png">
+                                                    </a></li>
                                 </ul>
                             </div>
                             <div class="fr__product__inner">

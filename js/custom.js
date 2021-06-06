@@ -1,3 +1,7 @@
+function customizesendwp(){
+	alert("s");
+}
+
 
 function astrologersbook(id){
 	alert(id);

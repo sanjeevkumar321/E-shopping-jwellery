@@ -111,8 +111,11 @@ if($cat_id>0){
 												</div>
 												<div class="fr__hover__info">
 													<ul class="product__action">
-														<li><a href="javascript:void(0)" onclick="wishlist_manage('<?php echo $list['id']?>','add')"><i class="icon-heart icons"></i></a></li>
-														<li><a href="javascript:void(0)" onclick="manage_cart('<?php echo $list['id']?>','add')"><i class="icon-handbag icons"></i></a></li>
+													<li>
+													<a class="wp" href="https://api.whatsapp.com/send?text=<?php echo SITE_PATH."/product.php?id=".$list['id']?>
+													%0a for inquery&phone=<?php echo WHATAPP_NUMBER?>">
+														<img src="images/icons/whatsappcol.png">
+													</a></li>
 													</ul>
 												</div>
 												<div class="fr__product__inner">
@@ -133,11 +136,17 @@ if($cat_id>0){
 					<?php } else { 
 						echo "Data not found";
 					} ?>
-                
+               
+
 				</div>
             </div>
         </section>
         <!-- End Product Grid -->
         <!-- End Banner Area -->
 		<input type="hidden" id="qty" value="1"/>
+		
+		<div class="row mb--30" style="text-align: center;">
+		<p>customize your product</p>
+		<button  type="button" class="btn btn-them btn-sm" data-toggle="modal" data-target="#myModal">customize</button>
+		</div>
 <?php require('footer.php')?>        

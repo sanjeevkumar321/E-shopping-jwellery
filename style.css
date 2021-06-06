@@ -393,8 +393,13 @@
 .product__action li a:hover i {
     color: #fff;
 }
-
-.product__action li:nth-child(1) {
+a.wp {
+    background: transparent !important;
+}
+a.wp:hover {
+    background: transparent !important;
+}
+/*.product__action li:nth-child(1) {
     opacity: 0;
     transition: opacity 300ms linear 0s;
 }
@@ -405,9 +410,9 @@
 .product__action li:nth-child(3) {
     opacity: 0;
     transition: opacity 700ms linear 0s;
-}
+}*/
 
-.category:hover .product__action li:nth-child(1) {
+/*.category:hover .product__action li:nth-child(1) {
     -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInRight;
           animation: 300ms ease-in-out 0s normal none 1 running fadeInRight;
     opacity: 1;
@@ -426,7 +431,7 @@
           animation: 700ms ease-in-out 0s normal none 1 running fadeInRight;
     opacity: 1;
     transition: opacity 700ms linear 0s;
-}
+}*/
 
 .category {
     overflow: hidden;

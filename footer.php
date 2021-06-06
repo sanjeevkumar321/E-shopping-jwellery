@@ -1,3 +1,43 @@
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Customize your design Or Query</h4>
+      </div>
+      <div class="modal-body">
+            <form method="post" action="">
+           <div class="input-group mb--10">
+      <span class="input-group-addon"><b>Name</b></span>
+        <input id="cname" type="text" class="form-control" name="cname" placeholder="name">
+      </div>      
+      <div class="input-group mb--10">
+        <span class="input-group-addon"><b>wt</b></span>
+        <input id="weight" type="text" class="form-control" name="cweight" placeholder="weight">
+      </div>
+      <div class="input-group mb--10">
+        <span class="input-group-addon"><b>₹</b></span>
+        <input id="price" type="text" class="form-control" name="cprice" placeholder="price">
+      </div>
+       <div class="input-group" style="margin: auto;">
+      <button class="btn btn-them" name="send_custom_wp">Submit</button>
+      </div>
+      
+    </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end modal -->
+
+
 <footer id="htc__footer">
             <!-- Start Footer Widget -->
             <div class="footer__container bg__cat--1">
